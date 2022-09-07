@@ -1,6 +1,5 @@
 1.2.0 2022-09-07
   - Versioning mistake. Changes listed for 1.1.0 apply in fact to 1.2.0.
-
 1.1.0 2022-09-07
   - Added unit information to .edf files.
   - MATLAB script added to include unit information in .edf files.
