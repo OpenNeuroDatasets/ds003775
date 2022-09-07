@@ -1,9 +1,0 @@
-1.1.0 2022-09-07
-  - Added unit information to .edf files.
-  - MATLAB script added to include unit information in .edf files.
-  - Fixed typos in participants.json file.
-  - Corrected minor mistakes in the participants.json file.
-  - Changed naming strategy for derived (cleaned) .set files.
-
-1.0.0 2021-08-25
-  - Initial release.
