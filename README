@@ -1,0 +1,92 @@
+# SRM Resting-state EEG
+
+## Introduction
+
+This EEG dataset contains resting-state EEG extracted from the experimental
+paradigm used in the *Stimulus-Selective Response Modulation* (SRM) project at
+the Dept. of Psychology, University of Oslo, Norway.
+
+The data is recorded with a BioSemi ActiveTwo system, using 64 electrodes
+following the positional scheme of the extended 10-20 system (10-10).
+Each datafile comprises four minutes of uninterrupted EEG acquired while the
+subjects were resting with their eyes closed. The dataset includes EEG from
+111 healthy control subjects (the "t1" session), of which a number underwent
+an additional EEG recording at a later date (the "t2" session). Thus, some
+subjects have one associated EEG file, whereas others have two.
+
+### Disclaimer
+
+The dataset is provided "as is". Hereunder, the authors take no responsibility
+with regard to data quality. The user is solely responsible for ascertaining
+that the data used for publications or in other contexts fulfil the required
+quality criteria.
+
+
+
+## The data
+
+### Raw data files
+
+The raw EEG data signals are rereferenced to the average reference. Other than
+that, no operations have been performed on the data. The files contain no
+events; the whole continuous segment is resting-state data. The data signals
+are unfiltered (recorded in Europe, the line noise frequency is 50 Hz). The
+time points for the subject's EEG recording(s), are listed in the *_scans.tsv
+file (particularly interesting for the subjects with two recordings).
+
+Please note that the quality of the raw data has **not** been carefully
+assessed. While most data files are of high quality, a few might be of poorer
+quality. The data files are provided "as is", and it is the user's
+esponsibility to ascertain the quality of the individual data file.
+
+
+### /derivatives/cleaned_data
+
+For convenience, a cleaned dataset is provided. The files in this derived
+dataset have been preprocessed with a basic, fully automated pipeline (see
+/code/s2_preprocess.m for details) directory for details. The derived files are
+stored as EEGLAB .set files in a directory structure identical to that of the
+raw files. Please note that the *\*_channels.tsv* files associated with the
+derived files have been updated with status information about each channel
+("good" or "bad"). The "bad" channels are – for the sake of consistency –
+interpolated, and thus still present in the data. It might be advisable to
+remove these channels in some analyses, as they (per definition) do not provide
+anything to the EEG data. The cleaned data signals are referenced to the
+average reference (including the interpolated channels).
+
+Please mind the automatic nature of the employed pipeline. It might not perform
+optimally on all data files (*e.g.* over-/underestimating proportion of bad
+channels). For publications, we recommend implementing a more sensitive
+cleaning pipeline.
+
+
+### Demographic and cognitive test data
+
+The *participants.tsv* file in the root folder contains the variables age,
+sex, and a range of cognitive test scores. See the sidecar participants.json
+for more information on the behavioural measures. Please note that these
+measures were collected in connection with the "t1" session recording.
+
+
+
+## How to cite
+
+All use of this dataset in a publication context requires the following paper
+to be cited:
+
+Rygvold, T. W., Hatlestad‐Hall, C., Elvsåshagen, T., Moberget, T., &
+Andersson, S. (2021). Do visual and auditory stimulus‐specific response
+modulation reflect different mechanisms of neocortical plasticity?.
+European Journal of Neuroscience, 53(4), 1072-1085.
+DOI: http://dx.doi.org/10.1111/ejn.14964
+
+
+
+## Contact
+
+Questions regarding the EEG data may be addressed to
+Christoffer Hatlestad-Hall (chr.hh@pm.me).
+
+Question regarding the project in general may be addressed to
+Stein Andersson (stein.andersson@psykologi.uio.no) or
+Trine W. Rygvold (t.w.rygvold@psykologi.uio.no).
