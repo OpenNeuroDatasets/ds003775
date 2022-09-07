@@ -4,5 +4,6 @@
   - Fixed typos in participants.json file.
   - Corrected minor mistakes in the participants.json file.
   - Changed naming strategy for derived (cleaned) .set files.
+
 1.0.0 2021-08-25
   - Initial release.
