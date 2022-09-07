@@ -75,9 +75,9 @@
 		"Description": "Verbal Fluency 1 (phonemic)"
 	},
 	"vf_2": {
-		"Description": "Verbal Fluency 1 (semantic)"
+		"Description": "Verbal Fluency 2 (semantic)"
 	},
 	"vf_3": {
-		"Description": "Verbal Fluency 1 (switching)"
+		"Description": "Verbal Fluency 3 (switching)"
 	}
 }
