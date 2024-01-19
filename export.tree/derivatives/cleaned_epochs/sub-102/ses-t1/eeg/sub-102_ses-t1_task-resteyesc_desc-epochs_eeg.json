@@ -1,0 +1,21 @@
+{
+	"CapManufacturer":"BioSemi",
+	"ECGChannelCount":0,
+	"EEGChannelCount":64,
+	"EEGPlacementScheme":"10-10",
+	"EEGReference":"average",
+	"EMGChannelCount":0,
+	"EOGChannelCount":0,
+	"EpochLength":4,
+	"InstitutionName":"University of Oslo, Dept. of Psychology",
+	"Manufacturer":"BioSemi",
+	"MiscChannelCount":0,
+	"PowerLineFrequency":50,
+	"RecordingDuration":240,
+	"RecordingType":"epoched",
+	"SamplingFrequency":1024,
+	"SoftwareFilters":"Band-pass filtered: 1-45 Hz (pop_eegfiltnew defaults)",
+	"TaskDescription":"Resting-state data extracted from an experimental evoked potential paradigm.",
+	"TaskName":"resteyesc",
+	"TriggerChannelCount":0
+}
