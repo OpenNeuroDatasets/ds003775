@@ -1,0 +1,16 @@
+{
+	"Authors":[
+		"Christoffer Hatlestad-Hall",
+		"Trine W. Rygvold",
+		"Stein Andersson"
+	],
+	"BIDSVersion":"1.7.0",
+	"DatasetType":"derivative",
+	"GeneratedBy":{
+		"Name":"cleaned_epochs",
+		"Description":"The dataset contains cleaned epochs. See the preprocessing script located in the code directory for details."
+	},
+	"HowToAcknowledge":"Reference to Rygvold T, Hatlestad-Hall C et al. (2021): http:\/\/dx.doi.org\/10.1111\/ejn.14964",
+	"License":"CC BY 4.0",
+	"Name":"SRM Resting-state EEG - cleaned epochs"
+}
